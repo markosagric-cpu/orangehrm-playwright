@@ -1,5 +1,5 @@
 import { test as base, expect, mergeTests } from '@playwright/test';
-import { LoginPage } from '../PageObjects/loginPage';
+import { LoginPage } from '../PageObjects/LoginPage';
 import { DashboardPage } from '../PageObjects/DashboardPage';
 import { NavigationPanel } from '../PageObjects/Components/NavigationPanel';
 import { PasswordResetPage } from '../PageObjects/PasswordResetPage';
