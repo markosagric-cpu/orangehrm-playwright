@@ -1,0 +1,12 @@
+{
+    "newValidUser": {
+        "firstName": "John",
+        "middleName": "David",
+        "lastName": "Doe",
+        "employeeID": "",
+        "username": "johndoe",
+        "password": "admin123",
+        "confirmPassword": "admin123",
+        "profilePicture": false
+    }
+}

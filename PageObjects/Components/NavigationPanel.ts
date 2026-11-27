@@ -14,6 +14,14 @@ export class NavigationPanel {
         return this.page.getByRole('link', { name: 'client brand banner' });
     }
 
+    pimLink(): Locator {
+        return this.page.getByRole('link', { name: 'PIM' });
+    }
+
+    adminLink(): Locator {
+        return this.page.getByRole('link', { name: 'Admin' })
+    }
+
     //#endregion
 
     //#region functions
