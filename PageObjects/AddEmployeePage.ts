@@ -80,14 +80,20 @@ export class AddEmployeePage {
         }
 
         if (user.employeeID) {
+            const maxLength = 10;
+            const timestamp = Date.now().toString();
+            const suffixLength = Math.max(0, maxLength - user.employeeID.length);
+            const suffix = suffixLength > 0 ? timestamp.slice(-suffixLength) : '';
+            const uniqueEmployeeId = (user.employeeID + suffix).slice(0, maxLength);
+
             await this.employeeIdField().click();
-            await this.employeeIdField().fill(user.employeeID);
+            await this.employeeIdField().fill(uniqueEmployeeId);
         }
 
-        let timestamp = Date.now();
-        let uniqueUsername
+        let timestamp2 = Date.now();
+        let uniqueUsername;
         if (user.username) {
-            uniqueUsername = user.username + timestamp;
+            uniqueUsername = user.username + timestamp2;
             await this.usernameField().click();
             await this.usernameField().fill(uniqueUsername);
         }
