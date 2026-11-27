@@ -93,12 +93,12 @@ export class AddEmployeePage {
         }
 
         if (user.password) {
-            await this.passwordField().click();
+            //await this.passwordField().click();
             await this.passwordField().fill(user.password);
         }
 
         if (user.confirmPassword) {
-            await this.confirmPasswordField().click();
+            //await this.confirmPasswordField().click();
             await this.confirmPasswordField().fill(user.confirmPassword);
         }
 
